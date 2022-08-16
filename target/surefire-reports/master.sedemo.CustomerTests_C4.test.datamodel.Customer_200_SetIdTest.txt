@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: master.sedemo.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in master.sedemo.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest
+test210_setIdWithIllegalArguments  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest.test210_setIdWithIllegalArguments(Customer_200_SetIdTest.java:64)
+
+test211_setIdWithIllegalArguments  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest.lambda$test211_setIdWithIllegalArguments$2(Customer_200_SetIdTest.java:83)
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest.test211_setIdWithIllegalArguments(Customer_200_SetIdTest.java:82)
+

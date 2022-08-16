@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: master.sedemo.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 7, Errors: 1, Skipped: 0, Time elapsed: 0.069 s <<< FAILURE! - in master.sedemo.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest
+test501_setNameMultipartLastName  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test501_setNameMultipartLastName(Customer_500_SetNameExtendedTest.java:44)
+
+test502_setNameMultipartLastName  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test502_setNameMultipartLastName(Customer_500_SetNameExtendedTest.java:51)
+
+test511_setNameDoubleFirstName  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Nadine Ulla> but was: <Nadine Ulla>
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test511_setNameDoubleFirstName(Customer_500_SetNameExtendedTest.java:69)
+
+test512_setNameDoubleFirstName  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Nadine Ulla> but was: <Nadine Ulla>
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test512_setNameDoubleFirstName(Customer_500_SetNameExtendedTest.java:76)
+
+test521_setNameMultipartFirstNames  Time elapsed: 0.006 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Nadine Ulla Maxine> but was: <Nadine Ulla Maxine>
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test521_setNameMultipartFirstNames(Customer_500_SetNameExtendedTest.java:94)
+
+test522_setNameMultipartFirstNames  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Nadine Ulla Maxine> but was: <Nadine Ulla Maxine>
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test522_setNameMultipartFirstNames(Customer_500_SetNameExtendedTest.java:101)
+
+test531_setNameMultipartNames  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Khaled Mohamed-Arif> but was: <Khaled Mohamed-Arif>
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test531_setNameMultipartNames(Customer_500_SetNameExtendedTest.java:119)
+
+test553_setNameMultiDashMultipartFirstNames  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Only a single name: Khaled-Mohamed-Arif-Saad-Abdelalim
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test553_setNameMultiDashMultipartFirstNames(Customer_500_SetNameExtendedTest.java:150)
+

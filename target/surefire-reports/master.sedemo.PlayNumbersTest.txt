@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: master.sedemo.PlayNumbersTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in master.sedemo.PlayNumbersTest
+test100_sum  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected:<30> but was:<0>
+	at master.sedemo.PlayNumbersTest.test100_sum(PlayNumbersTest.java:31)
+

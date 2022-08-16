@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: master.sedemo.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 2, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! - in master.sedemo.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest
+test100_Constructor  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <>
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test100_Constructor(Customer_100_ConstructorTest.java:31)
+
+test101_ConstructorWithRegularNameArgument  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Only a single name: Meyer
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test101_ConstructorWithRegularNameArgument(Customer_100_ConstructorTest.java:44)
+
+test102_ConstructorWithEmptyNameArgument  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <name empty.> but was: <Only a single name: >
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test102_ConstructorWithEmptyNameArgument(Customer_100_ConstructorTest.java:64)
+
+test103_ConstructorWithNullArgument  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test103_ConstructorWithNullArgument(Customer_100_ConstructorTest.java:75)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "name" is null
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.lambda$test103_ConstructorWithNullArgument$1(Customer_100_ConstructorTest.java:77)
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test103_ConstructorWithNullArgument(Customer_100_ConstructorTest.java:75)
+
+test104_ChainableSetters  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Only a single name: 
+	at master.sedemo.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test104_ChainableSetters(Customer_100_ConstructorTest.java:91)
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="master.sedemo.SeDemoApplicationTests" time="5.674" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.097" tests="17" errors="0" skipped="0" failures="8">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -56,5 +56,73 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="contextLoads" classname="master.sedemo.SeDemoApplicationTests" time="0.491"/>
+  <testcase name="test300_setNameFirstAndLastName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.004"/>
+  <testcase name="test301_setNameFirstAndLastName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0"/>
+  <testcase name="test302_setNameFirstAndLastName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.001"/>
+  <testcase name="test303_setNameFirstAndLastName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.001"/>
+  <testcase name="test310_setNameSingleName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.001"/>
+  <testcase name="test311_setNameSingleName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.018">
+    <failure message="expected: &lt; Eric&gt; but was: &lt;Eric&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Eric> but was: <Eric>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test311_setNameSingleName(Customer_300_SetNameTest.java:74)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test312_setNameSingleName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.002">
+    <failure message="expected: &lt; Eric&gt; but was: &lt;Eric&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Eric> but was: <Eric>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test312_setNameSingleName(Customer_300_SetNameTest.java:81)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test313_setNameSingleName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.001"/>
+  <testcase name="test320_setNameDoubleLastName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.002"/>
+  <testcase name="test321_setNameDoubleLastName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.001">
+    <failure message="expected: &lt; Tim&gt; but was: &lt;Tim&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test321_setNameDoubleLastName(Customer_300_SetNameTest.java:106)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test322_setNameDoubleLastName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.021">
+    <failure message="expected: &lt; Tim&gt; but was: &lt;Tim&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test322_setNameDoubleLastName(Customer_300_SetNameTest.java:113)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test330_setNameSingleArgumentConstructor" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.002"/>
+  <testcase name="test331_setNameSingleArgumentConstructor" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.001">
+    <failure message="expected: &lt; Eric&gt; but was: &lt;Eric&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Eric> but was: <Eric>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test331_setNameSingleArgumentConstructor(Customer_300_SetNameTest.java:131)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+Calling The Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test332_setNameSingleArgumentConstructor" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.005">
+    <failure message="expected: &lt; Eric&gt; but was: &lt;Eric&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Eric> but was: <Eric>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test332_setNameSingleArgumentConstructor(Customer_300_SetNameTest.java:138)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+Calling The Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test333_setNameSingleArgumentConstructor" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.002"/>
+  <testcase name="test334_setNameSingleArgumentConstructor" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.004">
+    <failure message="expected: &lt; Tim&gt; but was: &lt;Tim&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test334_setNameSingleArgumentConstructor(Customer_300_SetNameTest.java:152)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+Calling The Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test335_setNameSingleArgumentConstructor" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest" time="0.003">
+    <failure message="expected: &lt; Tim&gt; but was: &lt;Tim&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test335_setNameSingleArgumentConstructor(Customer_300_SetNameTest.java:159)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+Calling The Constructor
+]]></system-out>
+  </testcase>
 </testsuite>

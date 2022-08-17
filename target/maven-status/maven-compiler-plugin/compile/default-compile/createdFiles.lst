@@ -1,9 +1,8 @@
+master/sedemo/tasks/Application_C3.class
+master/sedemo/tasks/Customer.class
 master/sedemo/config/SpringWebConfig.class
-master/sedemo/Application_C3.class
-master/sedemo/Customer.class
-master/sedemo/PlayNumbers.class
+master/sedemo/tasks/PlayNumbers.class
 master/sedemo/SeDemoApplication.class
 master/sedemo/config/FF4jWebConsoleConfiguration.class
-master/sedemo/package-info.class
 master/sedemo/config/FF4jConfig.class
 master/sedemo/controller/HomeController.class

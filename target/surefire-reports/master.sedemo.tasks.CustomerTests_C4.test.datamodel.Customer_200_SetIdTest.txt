@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! - in master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest
+test210_setIdWithIllegalArguments  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <invalid id (negative).> but was: <invalid id (negative)>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest.test210_setIdWithIllegalArguments(Customer_200_SetIdTest.java:68)
+
+test211_setIdWithIllegalArguments  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <invalid id (negative).> but was: <invalid id (negative)>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest.lambda$test211_setIdWithIllegalArguments$2(Customer_200_SetIdTest.java:87)
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest.test211_setIdWithIllegalArguments(Customer_200_SetIdTest.java:82)
+

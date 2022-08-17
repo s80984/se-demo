@@ -24,6 +24,7 @@ public class Customer {
     }
 
     public Customer setId(long id) {
+        if(id < 0L) throw new IllegalArgumentException("invalid id (negative)");
         this.id = this.id == null ? id : this.id;
         return this;
     }
@@ -66,13 +67,15 @@ public class Customer {
         } else {
             int idx = name.lastIndexOf(' ');
             if (idx == -1)
-                throw new IllegalArgumentException("Only a single name: " + name);
+                throw new IllegalArgumentException("name empty.");
             this.firstName = name.substring(0, idx);
             this.lastName  = name.substring(idx + 1);
         }
     }
 
     public Customer addContact(String data){
+        if(data.length() < 6) throw new IllegalArgumentException("contact less than 6 characters: \"" + data +
+                "\".");
         if(this.data == null) {
             this.data = new ArrayList<String>();
             this.data.add(data);

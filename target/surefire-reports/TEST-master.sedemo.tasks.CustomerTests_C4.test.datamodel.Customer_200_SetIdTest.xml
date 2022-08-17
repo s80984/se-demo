@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="master.sedemo.SeDemoApplicationTests" time="5.674" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest" time="0.005" tests="6" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -56,5 +56,23 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="contextLoads" classname="master.sedemo.SeDemoApplicationTests" time="0.491"/>
+  <testcase name="test200_setIdRegularValue" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest" time="0"/>
+  <testcase name="test201_setIdMinValue" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest" time="0"/>
+  <testcase name="test202_setIdMaxValue" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest" time="0"/>
+  <testcase name="test210_setIdWithIllegalArguments" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest" time="0">
+    <failure message="expected: &lt;invalid id (negative).&gt; but was: &lt;invalid id (negative)&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <invalid id (negative).> but was: <invalid id (negative)>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest.test210_setIdWithIllegalArguments(Customer_200_SetIdTest.java:68)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test211_setIdWithIllegalArguments" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest" time="0.004">
+    <failure message="expected: &lt;invalid id (negative).&gt; but was: &lt;invalid id (negative)&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <invalid id (negative).> but was: <invalid id (negative)>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest.lambda$test211_setIdWithIllegalArguments$2(Customer_200_SetIdTest.java:87)
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest.test211_setIdWithIllegalArguments(Customer_200_SetIdTest.java:82)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test220_setIdOnce" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_200_SetIdTest" time="0"/>
 </testsuite>

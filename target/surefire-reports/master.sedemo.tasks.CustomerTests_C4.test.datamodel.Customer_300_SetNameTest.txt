@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.097 s <<< FAILURE! - in master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest
+test311_setNameSingleName  Time elapsed: 0.018 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Eric> but was: <Eric>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test311_setNameSingleName(Customer_300_SetNameTest.java:74)
+
+test312_setNameSingleName  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Eric> but was: <Eric>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test312_setNameSingleName(Customer_300_SetNameTest.java:81)
+
+test321_setNameDoubleLastName  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test321_setNameDoubleLastName(Customer_300_SetNameTest.java:106)
+
+test322_setNameDoubleLastName  Time elapsed: 0.021 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test322_setNameDoubleLastName(Customer_300_SetNameTest.java:113)
+
+test331_setNameSingleArgumentConstructor  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Eric> but was: <Eric>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test331_setNameSingleArgumentConstructor(Customer_300_SetNameTest.java:131)
+
+test332_setNameSingleArgumentConstructor  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Eric> but was: <Eric>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test332_setNameSingleArgumentConstructor(Customer_300_SetNameTest.java:138)
+
+test334_setNameSingleArgumentConstructor  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test334_setNameSingleArgumentConstructor(Customer_300_SetNameTest.java:152)
+
+test335_setNameSingleArgumentConstructor  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_300_SetNameTest.test335_setNameSingleArgumentConstructor(Customer_300_SetNameTest.java:159)
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="master.sedemo.SeDemoApplicationTests" time="5.674" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0.045" tests="17" errors="1" skipped="0" failures="7">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -56,5 +56,69 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="contextLoads" classname="master.sedemo.SeDemoApplicationTests" time="0.491"/>
+  <testcase name="test500_setNameMultipartLastName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0"/>
+  <testcase name="test501_setNameMultipartLastName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0">
+    <failure message="expected: &lt; Tim&gt; but was: &lt;Tim&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test501_setNameMultipartLastName(Customer_500_SetNameExtendedTest.java:44)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test502_setNameMultipartLastName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0.01">
+    <failure message="expected: &lt; Tim&gt; but was: &lt;Tim&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Tim> but was: <Tim>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test502_setNameMultipartLastName(Customer_500_SetNameExtendedTest.java:51)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test510_setNameDoubleFirstName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0.001"/>
+  <testcase name="test511_setNameDoubleFirstName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0.001">
+    <failure message="expected: &lt; Nadine Ulla&gt; but was: &lt;Nadine Ulla&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Nadine Ulla> but was: <Nadine Ulla>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test511_setNameDoubleFirstName(Customer_500_SetNameExtendedTest.java:69)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test512_setNameDoubleFirstName" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0.001">
+    <failure message="expected: &lt; Nadine Ulla&gt; but was: &lt;Nadine Ulla&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Nadine Ulla> but was: <Nadine Ulla>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test512_setNameDoubleFirstName(Customer_500_SetNameExtendedTest.java:76)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test520_setNameMultipartFirstNames" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0"/>
+  <testcase name="test521_setNameMultipartFirstNames" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0.002">
+    <failure message="expected: &lt; Nadine Ulla Maxine&gt; but was: &lt;Nadine Ulla Maxine&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Nadine Ulla Maxine> but was: <Nadine Ulla Maxine>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test521_setNameMultipartFirstNames(Customer_500_SetNameExtendedTest.java:94)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test522_setNameMultipartFirstNames" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0.002">
+    <failure message="expected: &lt; Nadine Ulla Maxine&gt; but was: &lt;Nadine Ulla Maxine&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Nadine Ulla Maxine> but was: <Nadine Ulla Maxine>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test522_setNameMultipartFirstNames(Customer_500_SetNameExtendedTest.java:101)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test530_setNameMultipartFirstNames" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0"/>
+  <testcase name="test531_setNameMultipartNames" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0.002">
+    <failure message="expected: &lt; Khaled Mohamed-Arif&gt; but was: &lt;Khaled Mohamed-Arif&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: < Khaled Mohamed-Arif> but was: <Khaled Mohamed-Arif>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test531_setNameMultipartNames(Customer_500_SetNameExtendedTest.java:119)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test544_setNameMultiDashMultipartFirstNames" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0"/>
+  <testcase name="test550_setNameMultiDashMultipartFirstNames" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0.001"/>
+  <testcase name="test550_setNameExtremeLongNames" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0"/>
+  <testcase name="test551_setNameMultiDashMultipartFirstNames" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0"/>
+  <testcase name="test552_setNameMultipartNames" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0"/>
+  <testcase name="test553_setNameMultiDashMultipartFirstNames" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest" time="0.002">
+    <error message="name empty." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: name empty.
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_500_SetNameExtendedTest.test553_setNameMultiDashMultipartFirstNames(Customer_500_SetNameExtendedTest.java:150)
+</error>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
 </testsuite>

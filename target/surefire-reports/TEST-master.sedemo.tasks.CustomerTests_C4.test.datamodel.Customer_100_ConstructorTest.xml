@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="master.sedemo.SeDemoApplicationTests" time="5.674" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest" time="0.029" tests="5" errors="2" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -56,5 +56,36 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="contextLoads" classname="master.sedemo.SeDemoApplicationTests" time="0.491"/>
+  <testcase name="test100_Constructor" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest" time="0">
+    <failure message="expected: &lt;null&gt; but was: &lt;&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <null> but was: <>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test100_Constructor(Customer_100_ConstructorTest.java:31)
+]]></failure>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test101_ConstructorWithRegularNameArgument" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest" time="0.001">
+    <error message="name empty." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: name empty.
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test101_ConstructorWithRegularNameArgument(Customer_100_ConstructorTest.java:44)
+</error>
+    <system-out><![CDATA[Calling The Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test102_ConstructorWithEmptyNameArgument" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest" time="0.003"/>
+  <testcase name="test103_ConstructorWithNullArgument" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest" time="0.004">
+    <failure message="Unexpected exception type thrown ==&gt; expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.NullPointerException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test103_ConstructorWithNullArgument(Customer_100_ConstructorTest.java:75)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "name" is null
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.lambda$test103_ConstructorWithNullArgument$1(Customer_100_ConstructorTest.java:77)
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test103_ConstructorWithNullArgument(Customer_100_ConstructorTest.java:75)
+]]></failure>
+    <system-out><![CDATA[Calling The Constructor
+]]></system-out>
+  </testcase>
+  <testcase name="test104_ChainableSetters" classname="master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest" time="0.014">
+    <error message="name empty." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: name empty.
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test104_ChainableSetters(Customer_100_ConstructorTest.java:91)
+</error>
+    <system-out><![CDATA[Calling The empty Constructor
+]]></system-out>
+  </testcase>
 </testsuite>

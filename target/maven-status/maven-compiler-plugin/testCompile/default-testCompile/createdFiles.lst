@@ -1,7 +1,7 @@
+master/sedemo/tasks/PlayNumbersTest.class
+master/sedemo/tasks/CustomerTests_C4/test/datamodel/Customer_200_SetIdTest.class
 master/sedemo/SeDemoApplicationTests.class
-master/sedemo/PlayNumbersTest.class
-master/sedemo/CustomerTests_C4/test/datamodel/Customer_100_ConstructorTest.class
-master/sedemo/CustomerTests_C4/test/datamodel/Customer_200_SetIdTest.class
-master/sedemo/CustomerTests_C4/test/datamodel/Customer_400_ContactsTest.class
-master/sedemo/CustomerTests_C4/test/datamodel/Customer_500_SetNameExtendedTest.class
-master/sedemo/CustomerTests_C4/test/datamodel/Customer_300_SetNameTest.class
+master/sedemo/tasks/CustomerTests_C4/test/datamodel/Customer_400_ContactsTest.class
+master/sedemo/tasks/CustomerTests_C4/test/datamodel/Customer_100_ConstructorTest.class
+master/sedemo/tasks/CustomerTests_C4/test/datamodel/Customer_500_SetNameExtendedTest.class
+master/sedemo/tasks/CustomerTests_C4/test/datamodel/Customer_300_SetNameTest.class

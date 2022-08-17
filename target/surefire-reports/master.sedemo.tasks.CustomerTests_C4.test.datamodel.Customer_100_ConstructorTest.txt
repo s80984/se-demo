@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 0.029 s <<< FAILURE! - in master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest
+test100_Constructor  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test100_Constructor(Customer_100_ConstructorTest.java:31)
+
+test101_ConstructorWithRegularNameArgument  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: name empty.
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test101_ConstructorWithRegularNameArgument(Customer_100_ConstructorTest.java:44)
+
+test103_ConstructorWithNullArgument  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test103_ConstructorWithNullArgument(Customer_100_ConstructorTest.java:75)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "name" is null
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.lambda$test103_ConstructorWithNullArgument$1(Customer_100_ConstructorTest.java:77)
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test103_ConstructorWithNullArgument(Customer_100_ConstructorTest.java:75)
+
+test104_ChainableSetters  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.IllegalArgumentException: name empty.
+	at master.sedemo.tasks.CustomerTests_C4.test.datamodel.Customer_100_ConstructorTest.test104_ChainableSetters(Customer_100_ConstructorTest.java:91)
+

@@ -1,4 +1,4 @@
-package master.sedemo;
+package master.sedemo.tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -80,13 +80,18 @@ public class PlayNumbers {
 	 */
 	public int sum(int[] numbers) {
 		int result = 0;
-
+		for (int i = 0; i < numbers.length; i++) {
+			result+=numbers[i];
+		}
 		return result;
 	}
 
-	int sumPositiveEvenNumbers(int[] numbers) { 
+	int sumPositiveEvenNumbers(int[] numbers) {
 		int result = 0;
-
+		for (int i = 0; i < numbers.length; i++) {
+			if(numbers[i]%2 == 0 && numbers[i] > 0) result+=numbers[i];
+			else continue;
+		}
 		return result;
 	}
 
@@ -95,19 +100,33 @@ public class PlayNumbers {
 	 * Aufgabe 3.)
 	 */
 	int findFirst(int x, int[] numbers) {
-		
-		return -1;
+		int result = -1;
+		for (int i = 0; i < numbers.length; i++) {
+			if(numbers[i] == x ){
+				result=i;
+				break;
+			}
+		}
+		return result;
 	}
 
 	int findLast(int x, int[] numbers) {
 		int result = -1;
-		
+		for (int i = 0; i < numbers.length; i++) {
+			if(numbers[i] == x ){
+				result=i;
+			}
+		}
 		return result;
 	}
 
 	int[] findAll(int x, int[] numbers) {
 		List<Integer> result = new ArrayList<Integer>();
-		
+		for (int i = 0; i < numbers.length; i++) {
+			if(numbers[i] == x ){
+				result.add(i);
+			}
+		}
 		// convert List<Integer> to int[]
 		return result.stream().mapToInt(Integer::intValue).toArray();
 	}
@@ -117,11 +136,28 @@ public class PlayNumbers {
 	 * Aufgabe 4.)
 	 */
 	int[][] findAllAdjacent(int x, int y, int[] numbers) {
-		int[][] result = {{0, 0}};
-		
-		return result;
-	}
+		int[][] results = {{0, 0}};
+//		List<Integer> list = Arrays.asList(results);
+//		ArrayList<ArrayList<Integer>> array = new ArrayList<ArrayList<Integer>>();
+//
+//
+//		for (int i = 0; i < array.length; i++) {
+//			for (int d = 0; d < numbers.length; d++) {
+//				if(numbers[i] == x && numbers[i+1] == y ){
+//					array.add (i,i+1);
+//				}
+//			}
+//		}
+//
+//		int[] primitive = list.stream()
+//		.mapToInt(Integer::intValue)
+//		.toArray();
+//		for(int i=0; i < results.length; i++) {
+//			System.out.println(String.format(" ‐ %s", Arrays.toString(results[i])));
+//		}
 
+		return results;
+	}
 
 	/*
 	 * Aufgabe 5.)
@@ -140,7 +176,7 @@ public class PlayNumbers {
 	 */
 	int[][] findAllSums(int sum, int[] numbers) {
 		int[][] result = {{0, 0}};
-		
+
 		return result;
 	}
 

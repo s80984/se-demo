@@ -1,5 +1,6 @@
-package master.sedemo;
+package master.sedemo.tasks;
 
+import master.sedemo.tasks.PlayNumbers;
 import org.junit.jupiter.api.*;
 
 import static org.junit.Assert.assertEquals;

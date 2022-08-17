@@ -1,6 +1,6 @@
-package master.sedemo.CustomerTests_C4.test.datamodel;
+package master.sedemo.tasks.CustomerTests_C4.test.datamodel;
 
-import master.sedemo.Customer;
+import master.sedemo.tasks.Customer;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;

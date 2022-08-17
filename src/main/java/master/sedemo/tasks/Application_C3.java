@@ -1,12 +1,10 @@
-package master.sedemo;
+package master.sedemo.tasks;
 
 import java.util.Collection;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
-
-import master.sedemo.Customer;
 
 
 ///**

@@ -14,7 +14,7 @@ public class PlayNumbers {
 
 
 	public static void main(String[] args) {
-		var appInstance = new PlayNumbers();
+		PlayNumbers appInstance = new PlayNumbers();
 		appInstance.run();
 	}
 

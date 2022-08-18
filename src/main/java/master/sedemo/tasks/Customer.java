@@ -12,10 +12,8 @@ public class Customer {
     private ArrayList<String> data;
 
     public Customer(){
-        System.out.println("Calling The empty Constructor");
     }
     public Customer(String name) {
-        System.out.println("Calling The Constructor");
         this.setName(name);
     }
 

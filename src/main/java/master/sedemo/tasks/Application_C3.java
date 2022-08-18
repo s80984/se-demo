@@ -33,7 +33,7 @@ public class Application_C3 {
 	 * @param args arguments passed from command line.
 	 */
 	public static void main(String[] args) {
-		var appInstance = new Application_C3();
+		Application_C3 appInstance = new Application_C3();
 		appInstance.run();
 	}
 

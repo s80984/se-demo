@@ -1,4 +1,6 @@
-package master.sedemo.tasks;
+package master.sedemo.application;
+
+import master.sedemo.tasks.Customer;
 
 import java.util.Collection;
 import java.util.Set;
@@ -7,18 +9,18 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 
-///**
-// * Runnable application class that creates and outputs {@link Customer}'s for the
-// * <code>
-// * <a href="{@docRoot}/index.html">{@value application.package_info#RootName}</a>.
-// * </code>
-// *
-// * @version <code style=color:green>{@value application.package_info#Version}</code>
-// * @author <code style=color:blue>{@value application.package_info#Author}</code>
-// */
+/**
+ * Runnable application class that creates and outputs {@link Customer}'s for the
+ * <code>
+ * <a href="{@docRoot}/index.html">{@value master.sedemo.application.package_info#RootName}</a>.
+ * </code>
+ * 
+ * @version <code style=color:green>{@value master.sedemo.application.package_info#Version}</code>
+ * @author <code style=color:blue>{@value master.sedemo.application.package_info#Author}</code>
+ */
 
 public class Application_C3 {
-//	private final String appName;
+	private final String appName;
 	//
 	private final Customer eric;
 	private final Customer anne;
@@ -26,14 +28,13 @@ public class Application_C3 {
 	private final Customer nadine;
 	private final Customer khaled;
 
-
 	/**
 	 * Public main() function.
 	 * 
 	 * @param args arguments passed from command line.
 	 */
 	public static void main(String[] args) {
-		Application_C3 appInstance = new Application_C3();
+		var appInstance = new Application_C3();
 		appInstance.run();
 	}
 
@@ -42,7 +43,7 @@ public class Application_C3 {
 	 * Private constructor to initialize local attributes.
 	 */
 	private Application_C3() {
-//		this.appName = package_info.RootName + ": " + this.getClass().getSimpleName();
+		this.appName = package_info.RootName + ": " + this.getClass().getSimpleName();
 		//
 		eric = new Customer("Eric Meyer")
 			.setId(892474L)		// set id, first time
@@ -76,18 +77,31 @@ public class Application_C3 {
 	 * Private method that runs with application instance.
 	 */
 	private void run() {
-//		System.out.println(this.appName);
+		System.out.println(this.appName);
 		// 
 		Set<Customer> customers = Set.of(eric, anne, tim, nadine, khaled);
 		//
 		StringBuffer sb = new StringBuffer("Customers:\n");
-		printCustomers(sb, customers);
+		printCustomers(sb, customers
+
+/* DELETE FOR HANDOUT */
+		, customerStream -> customerStream
+			.sorted((c1, c2) -> c1.getLastName().compareTo(c2.getLastName()))	// task 4.)
+//			.filter(c -> c.getId() > 400000L && c.getId() < 500000L)	// task 5.)
+
+//			.distinct()
+//			.filter(c -> c.getId() % 2 == 1)
+//			.sorted((c1, c2) -> c1.getId().compareTo(c2.getId())) // for: Long
+//			.sorted((c1, c2) -> Long.compare(c1.getId(), c2.getId()))	// for: long
+//			.sorted((c1, c2) -> c1.getLastName().compareTo(c2.getLastName()))
+//			.sorted((c1, c2) -> Integer.compare(c1.getLastName().length(), c2.getLastName().length()))
+/* END */
+		);
 		//
 //		printCustomers(sb, customers,	// Aufgaben 4.), 5.)
 //			customerStream ???
 //		);
 		//
-
 		System.out.println(sb);
 	}
 
@@ -166,7 +180,7 @@ public class Application_C3 {
 		final StringBuffer sb_ = sb==null? new StringBuffer() : sb;
 		final int[] fw = {4, 32, 46};	// field widths
 		final int nameStyle = 0;
-		final String name = fmtCustomerName(c, nameStyle);
+		final String name = fmtName(c.getFirstName(), c.getLastName(), nameStyle);
 		final int len = Math.max(fw[1] - name.length() - 1, 1);
 		sb_.append( "| ")
 			.append(String.valueOf(c.getId())).append(" ".repeat(fw[0]-3))
@@ -185,44 +199,40 @@ public class Application_C3 {
 	/**
 	 * Format Customer name according to a style (0 is default):
 	 * <pre>
-	 * style: 0: "Meyer, Eric"  10: "MEYER, ERIC"
-	 *        1: "Eric Meyer"   11: "ERIC MEYER"
-	 *        2: "Meyer, E."    12: "MEYER, E."
-	 *        3: "E. Meyer"     13: "E. MEYER"
-	 *        4: "Meyer"        14: "MEYER"
-	 *        5: "Eric"         15: "ERIC"
-	 *        6: "E.M."
-	 *        7: "EM"
-	 *        8: "E"
-	 *        9: "M"
+	 * style: 0: "Meyer, Eric"    10: "MEYER, ERIC"    20: "E.M."
+	 *        1: "Meyer, E."      11: "MEYER, E."      21: "E."
+	 *        2: "Eric Meyer"     12: "ERIC MEYER"     22: "M."
+	 *        3: "E. Meyer"       13: "E. MEYER"
+	 *        4: "Eric M."        14: "ERIC M."
+	 *        5: "Eric"           15: "ERIC"
+	 *        6: "Meyer"          16: "MEYER"
 	 * </pre>
 	 * 
-	 * @param c Customer object.
-	 * @param style specify name formatting style as variable argument.
-	 * @return formatted Customer name.
+	 * @param firstName first name, may be null or "".
+	 * @param lastName last name, may be null or "".
+	 * @param style name formatting style.
+	 * @return formatted name according to style.
 	 */
-	public String fmtCustomerName(final Customer c, int... style) {
-		if(c==null)
-			throw new IllegalArgumentException("Customer null.");
+	public String fmtName(final String firstName, final String lastName, int... style) {
+		final int st = style.length > 0? style[0] : 0;	// 0 is default format
+		String fn = firstName != null? firstName : "";
+		String ln = lastName != null? lastName : "";
+		fn = (st==1 || st==3)? fmtName(fn, "", 21) : fn;	// firstName -> "E."
+		ln = (st==4)? fmtName("", ln, 22) : ln;		// lastName -> "M."
 		//
-		String ln = c.getLastName();
-		String fn = c.getFirstName();
-		String fn1 = fn.substring(0, 1).toUpperCase();
-		//
-		switch(style.length > 0? style[0] : 0) {	// 0 is default format
-		case 0: return String.format("%s, %s", ln, fn);
-		case 1: return String.format("%s %s", fn, ln);
-		case 2: return String.format("%s, %s.", ln, fn1);
-		case 3: return String.format("%s. %s", fn1, ln);
-		case 4:	return ln;
-		case 5: return fn;
-		case 6: return String.format("%s.%s.", fn1, fmtCustomerName(c, 9));
-		case 7: return String.format("%s%s", fn1, fmtCustomerName(c, 9));
-		case 8: return fn1;
-		case 9: return ln.substring(0, 1).toUpperCase();
-		case 10: case 11: case 12: case 13: case 14: case 15:
-			return fmtCustomerName(c, style[0] - 10).toUpperCase();
-		default: return fmtCustomerName(c);
-		}
+		return
+			(st >= 10)? (
+				(st>=10 && st<20)? fmtName(firstName, lastName, st - 10).toUpperCase() :
+				(st==20)? fmtName(firstName, "", 21) + fmtName("", lastName, 22) :
+				(st==21)? fn.length() > 0? String.format("%s.", fn.substring(0, 1).toUpperCase()) : "" :
+				(st==22)? ln.length() > 0? String.format("%s.", ln.substring(0, 1).toUpperCase()) : "" :
+					""	// return as default for: st > 22
+			) : (
+				(fn.length() > 0 && ln.length() > 0)? (
+					(st>=0 && st<=1)? String.format("%s, %s", ln, fn) :
+					(st>=2 && st<=4)? String.format("%s %s", fn, ln) :
+					(st==5)? fn :
+					(st==6)? ln : fmtName(fn, ln)	// return default name style
+			) : fn + ln);	// fn or ln (or both) are ""
 	}
 }

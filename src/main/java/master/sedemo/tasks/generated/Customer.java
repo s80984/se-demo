@@ -1,4 +1,4 @@
-package master.sedemo.tasks;
+package master.sedemo.tasks.generated;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,12 @@ import java.util.List;
  * @author <code style=color:blue>{@value application.package_info#Author}</code>
  */
 public class Customer {
+
+//    /**
+//     * Default constructor
+//     */
+//    public Customer() {
+//    }
 
     /**
      * Unique Customer id attribute, {@code id < 0} is invalid, id can only be set once.
@@ -38,17 +44,19 @@ public class Customer {
     /**
      * Default constructor.
      */
-    public Customer() { }
+    public Customer() {
+        // TODO implement here
+    }
+
 
     /**
      * Constructor with single-String name argument.
+     * 
      * @param name single-String Customer name, e.g. "Eric Meyer".
      * @throws IllegalArgumentException if name argument is null.
      */
     public Customer(String name) {
-        setName(name);	// throws IllegalArgumentException when name==null
-        if(lastName.length()==0)
-            throw new IllegalArgumentException("name empty.");
+        // TODO implement here
     }
 
 
@@ -57,7 +65,10 @@ public class Customer {
      * 
      * @return customer id, returns {@code null}, if id is unassigned.
      */
-    public Long getId() { return id >=  0? id : null; }
+    public Long getId() {
+        // TODO implement here
+        return null;
+    }
 
 
     /**
@@ -68,12 +79,8 @@ public class Customer {
      * @return chainable self-reference.
      */
     public Customer setId(long id) {
-        if(id < 0)
-            throw new IllegalArgumentException("invalid id (negative).");
-        //
-        // set id only once; id cannot be changed afterwards
-        this.id = this.id < 0? id : this.id;
-        return this;
+        // TODO implement here
+        return null;
     }
 
 
@@ -82,7 +89,10 @@ public class Customer {
      * 
      * @return value of lastName attribute, never null, mapped to "".
      */
-    public String getLastName() { return lastName; }
+    public String getLastName() {
+        // TODO implement here
+        return "";
+    }
 
 
     /**
@@ -90,7 +100,10 @@ public class Customer {
      * 
      * @return value of firstName attribute, never null, mapped to "".
      */
-    public String getFirstName() { return firstName; }
+    public String getFirstName() {
+        // TODO implement here
+        return "";
+    }
 
 
     /**
@@ -102,9 +115,8 @@ public class Customer {
      * @return chainable self-reference.
      */
     public Customer setName(String first, String last) {
-        this.firstName = first==null? this.firstName : trimStr(first);
-        this.lastName = last==null? this.lastName : trimStr(last);
-        return this;
+        // TODO implement here
+        return null;
     }
 
 
@@ -117,7 +129,8 @@ public class Customer {
      * @return chainable self-reference.
      */
     public Customer setName(String name) {
-        return splitName(name);		// throws IllegalArgumentException when name==null
+        // TODO implement here
+        return null;
     }
 
 
@@ -126,7 +139,10 @@ public class Customer {
      * 
      * @return number of contacts.
      */
-    public int contactsCount() { return contacts.size(); }
+    public int contactsCount() {
+        // TODO implement here
+        return 0;
+    }
 
 
     /**
@@ -135,8 +151,8 @@ public class Customer {
      * @return contacts (as {@code String[]}).
      */
     public String[ ] getContacts() {
-        // return contacts.toArray(String[]::new);
-        return contacts.toArray(new String[contacts.size()]);
+        // TODO implement here
+        return null;
     }
 
 
@@ -148,19 +164,8 @@ public class Customer {
      * @return chainable self-reference.
      */
     public Customer addContact(String contact) {
-        if(contact==null || contact.length()==0)
-            throw new IllegalArgumentException("contact null or empty.");
-        //
-        String cont = trimStr(contact);
-        int minLength = 6;
-        if(cont.length() < minLength)
-            throw new IllegalArgumentException("contact less than " +
-            minLength + " characters: \"" + contact + "\".");
-        //
-        if( ! contacts.contains(cont)) {
-            contacts.add(cont);
-        }
-        return this;
+        // TODO implement here
+        return null;
     }
 
 
@@ -170,57 +175,28 @@ public class Customer {
      * @param i index of contact to delete.
      */
     public void deleteContact(int i) {
-        if( i >= 0 && i < contacts.size() ) {
-            contacts.remove(i);
-        }
+        // TODO implement here
     }
 
 
     /**
      * Delete all contacts.
      */
-    public void deleteAllContacts() { contacts.clear(); }
+    public void deleteAllContacts() {
+        // TODO implement here
+    }
 
 
     /**
      * Split single-String name into last- and first name parts.
      * 
-     * @param name single-String name to split into first- and last name parts.
+     * @param name single-String name to split into first- and lastName parts.
      * @throws IllegalArgumentException if name argument is null.
      * @return chainable self-reference.
      */
     private Customer splitName(String name) {
-        if(name==null)
-            throw new IllegalArgumentException("name null.");
-        //
-        String first="", last="";
-        String[] spl1 = name.split("[,;]");
-        if(spl1.length > 1) {
-            // two-section name with last name first
-            last = spl1[0];
-            first = spl1[1];	// ignore higher splitters in first names
-        } else {
-        	// no separator [,;] -> split by white spaces;
-            for(String s : name.split("\\s+")) {
-                if( last.length() > 0 ) {
-                    // collect firstNames in order and lastName as last
-                    first += (first.length()==0? "" : " ") + last;
-                }
-                last = s;
-            }
-        }
-        return setName(first, last);
+        // TODO implement here
+        return null;
     }
 
-
-    /**
-     * Trim leading and trailing white spaces, commata {@code [,;]} and quotes {@code ["']} from String.
-     * @param s String to trim.
-     * @return trimmed String.
-     */
-    private String trimStr(String s) {
-        s = s.replaceAll("^[\\s\"',;]*", "");	// trim leading white spaces[\s], commata[,;] and quotes['"]
-        s = s.replaceAll( "[\\s\"',;]*$", "");	// trim trailing.
-        return s;
-    }
 }
